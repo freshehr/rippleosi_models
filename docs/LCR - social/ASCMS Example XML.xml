@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LCR>
+	<MessageHeader>   <!-- MESSAGE HEADER --><!-- Mapped to MessageHeader -->
+		<identifier value="ASCLCR20160411182946"/>   <!-- unique identifier for this message (ASCLCR prefix + datetimestamp [YYYYMMDDHHMISS] -->
+		<timestamp value="2016-04-11T18:29:46" />   <!-- datetimestamp of the message -->
+		<response>
+			<identifier value="1234567890"/>   <!-- service user's nhs number -->
+			<code value="ok"/>
+			<details value=""/>   <!-- not currently used -->
+		</response>
+		<source>
+			<name value="ASC"/>
+			<software value="CIS DEVELOPMENT"/>   <!-- name of the application software and environment -->
+			<version value=""/>   <!-- not currently used -->
+			<contact>
+				<system value="phone"/>
+				<value value="0113 3760341"/>   <!-- contact details for leeds city council duty team -->
+				<use value="work"/>
+				<period>
+					<start value=""/>   <!-- not currently used -->
+					<end value=""/>   <!-- not currently used -->
+				</period>
+			</contact>
+		</source>
+		<reason>
+			<coding>
+				<code value="SHD"/>   <!-- ASC data status code - set to either FND, ERR, NTF, or SHD -->
+				<display value="SHIELDED"/>   <!-- ASC data status desc - set to either FOUND, ERROR, NOTFOUND, or SHIELDED -->
+			</coding>
+			<text value="This record is currently unavailable. Should you require more information please contact Leeds City Council Duty Team on 0113 3760341."/>   <!-- not currently used -->		
+		</reason>		
+	</MessageHeader>
+	<Patient>   <!-- SERVICE USER DETAILS --><!-- Mapped to Patient -->
+		<identifier>	
+			<use value="usual"/>
+			<system value=""/>   <!-- not currently used -->
+			<value value="1234567890"/>   <!-- unique identifier for this record (service user's nhs number) -->
+		</identifier>
+		<active value="true"/>
+		<name>
+			<use value="usual"/>
+			<text value="Lcrintegration Testserviceuser"/>   <!-- service user's full name -->				
+			<family value="Testserviceuser"/>   <!-- service user's surname -->
+			<given value="Lcrintegration"/>   <!-- service user's forename(s) -->
+			<prefix value="Mr"/>   <!-- service user's prefix -->
+			<suffix value=""/>   <!-- not currently used - service user's suffix -->
+			<period>
+				<start value=""/>   <!-- not currently used -->
+				<end value=""/>   <!-- not currently used -->
+			</period>
+		</name>	
+		<telecom>
+			<system value=""/>   <!-- not currently used - service user's telecom type (phone, email) -->	
+			<value value=""/>   <!-- not currently used - service user's telecom details (phone number, email address) -->
+			<use value=""/>   <!-- not currently used - service user's telecom purpose (home, work, mobile) -->
+			<period>
+				<start value=""/>   <!-- not currently used -->
+				<end value=""/>   <!-- not currently used -->
+			</period>
+		</telecom>
+		<gender value=""/>   <!-- not currently used - service user's gender -->
+		<birthDate value="1974-05-29"/>   <!-- service user's date of birth -->
+		<deceasedDateTime value=""/>   <!-- not currently used - service user's date of death -->	
+		<address> <!-- not currently used - service user's address details -->
+			<use value=""/>   <!-- not currently used - service user's address purpose (home, work) -->
+			<type value=""/>   <!-- not currently used -->
+			<text value=""/>   <!-- not currently used - service user's full address -->
+			<line value=""/>   <!-- not currently used - service user's address line 1 (house name, house number, flat number, street address) -->
+			<city value=""/>   <!-- not currently used - service user's address city -->
+			<district value=""/>   <!-- not currently used -->
+			<state value=""/>   <!-- not currently used -->
+			<postalCode value=""/>   <!-- not currently used - service user's address postcode -->
+			<country value=""/>   <!-- not currently used - service user's address country -->
+			<period>
+				<start value=""/>   <!-- not currently used -->
+				<end value=""/>   <!-- not currently used -->
+			</period>	
+		</address>		
+	</Patient>	
+	<Carers>   <!-- CARERS DETAILS --><!-- Mapped to List w/RelatedPerson -->
+		<code>
+			<coding>
+				<code value="Carers"/>
+				<display value="Carers"/>
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</code>
+		<subject value="patient"/>
+		<source>
+			<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+		</source>
+		<List>
+			<RelatedPerson>
+				<identifier>
+					<use value="usual"/>
+					<system value=""/>
+					<value value="ASCCARER999"/>   <!-- unique identifier for this record (ASCCARER prefix + relationship id) -->
+				</identifier>
+				<patient>
+					<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+					<display value=""/>   <!-- not currently used - service user's full name -->
+				</patient>
+				<relationship>
+					<coding>
+						<system value=""/>
+						<code value="CAR"/>   <!-- relationship code -->
+						<display value="Carer"/>   <!-- relationship display name  -->
+					</coding>    
+					<text value=""/>   <!-- not currently used -->
+				</relationship>
+				<name>
+					<use value="usual"/>
+					<text value="Lcrintegration Testcarer"/>   <!-- related person's full name -->				
+					<family value="Testcarer"/>   <!-- related person's surname -->
+					<given value="Lcrintegration"/>   <!-- related person's forename(s) -->
+					<prefix value="Mrs"/>   <!-- related person's prefix -->
+					<suffix value=""/>   <!-- not currently used - related person's suffix -->
+					<period>
+						<start value=""/>   <!-- not currently used -->
+						<end value=""/>   <!-- not currently used -->
+					</period>
+				</name>	
+				<telecom>
+					<system value="phone"/>   <!-- related person's telecom type (phone, email) -->	
+					<value value="01131234567"/>   <!-- related person's telecom details (phone number, email address) -->
+					<use value="home"/>   <!-- related person's telecom purpose (home, work, mobile) -->
+					<period>
+						<start value=""/>   <!-- not currently used -->
+						<end value=""/>   <!-- not currently used -->
+					</period>
+				</telecom>
+				<gender value=""/>   <!-- not currently used -->
+				<address>   <!-- related person's address details -->
+					<use value="home"/>   <!-- related person's address purpose (home, work) -->
+					<type value="both"/>
+					<text value="123 Pudding Lane, Bramley, Leeds, LS13 1AA"/>   <!-- related person's full address -->
+					<line value="123 Pudding Lane"/>   <!-- related person's address line 1 (house name, house number, flat number, street address) -->
+					<city value="Leeds"/>   <!-- related person's address city -->
+					<district value=""/>   <!-- not currently used -->
+					<state value=""/>   <!-- not currently used -->
+					<postalCode value="LS13 1AA"/>   <!-- related person's address postcode -->
+					<country value=""/>   <!-- not currently used - related person's address country -->
+					<period>
+						<start value=""/>   <!-- not currently used -->
+						<end value=""/>   <!-- not currently used -->
+					</period>	
+				</address>	
+				<period>
+					<start value=""/>   <!-- not currently used -->
+					<end value=""/>   <!-- not currently used -->
+				</period>
+			</RelatedPerson>	
+		</List>
+	</Carers>
+	<Allocations>   <!-- INVOLVED PEOPLE/TEAMS DETAILS --><!-- Mapped to List w/Practitioner -->
+		<code>
+			<coding>
+				<code value="Allocations"/>
+				<display value="Allocations"/>
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</code>
+		<subject value="patient"/>
+		<source>
+			<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+		</source>
+		<List>
+			<Practitioner>
+				<identifier>
+					<use value="usual"/>
+					<system value=""/>
+					<value value="ASCALLOC99"/>   <!-- unique identifier for this record (ASCALLOC prefix + allocation id) -->
+				</identifier>
+				<active value="true"/>
+				<name>
+					<use value="usual"/>
+					<text value="Lcrintegration Testleadassessor"/>   <!-- practitioner's full name -->				
+					<family value="Testleadassessor"/>   <!-- practitioner's surname -->
+					<given value="Lcrintegration"/>   <!-- practitioner's forename(s) -->
+					<prefix value="Mr"/>   <!-- practitioner's prefix -->
+					<suffix value=""/>   <!-- not currently used - practitioner's suffix -->
+					<period>
+						<start value=""/>   <!-- not currently used -->
+						<end value=""/>   <!-- not currently used -->
+					</period>
+				</name>	
+				<telecom>
+					<system value="phone"/>   <!-- practitioner's telecom type (phone, email) -->	
+					<value value="01137777777"/>   <!-- practitioner's telecom details (phone number, email address) -->
+					<use value="work"/>   <!-- practitioner's telecom purpose (home, work, mobile) -->
+					<period>
+						<start value=""/>   <!-- not currently used -->
+						<end value=""/>   <!-- not currently used -->
+					</period>
+				</telecom>
+				<address>   <!-- not currently used - practitioner's address details -->
+					<use value=""/>   <!-- not currently used - practitioner's address purpose (home, work) -->
+					<type value=""/>
+					<text value=""/>   <!-- not currently used - practitioner's full address -->
+					<line value=""/>   <!-- not currently used - practitioner's address line 1 (house name, house number, flat number, street address) -->
+					<city value=""/>   <!-- not currently used - practitioner's address city -->
+					<district value=""/>   <!-- not currently used -->
+					<state value=""/>   <!-- not currently used -->
+					<postalCode value=""/>   <!-- not currently used - practitioner's address postcode -->
+					<country value=""/>   <!-- not currently used - practitioner's address country -->
+					<period>
+						<start value=""/>   <!-- not currently used -->
+						<end value=""/>   <!-- not currently used -->
+					</period>	
+				</address>	
+				<gender value=""/>   <!-- not currently used - practitioner's gender -->
+				<birthDate value=""/>   <!-- not currently used - practitioner's date of birth -->
+				<practitionerRole>			
+					<managingOrganization>   <!-- practitioner's team for this allocation -->
+						<reference value="Organisation/ASCGRP12"/>   <!-- practitioner's team identifier (ASCGRP prefix + group id) -->
+						<display value="ENE REAP 1"/>   <!-- practitioner's team display name -->
+					</managingOrganization>			
+					<role>
+						<coding>
+							<system value=""/>   <!-- not currently used -->
+							<code value="INI"/>   <!-- practitioner's role code -->
+							<display value="Lead Assessor"/>   <!-- practitioner's role display value -->
+						</coding> 
+						<text value=""/>   <!-- not currently used -->
+					</role>
+					<specialty>   <!-- not currently used -->
+						<coding>
+							<system value=""/>   <!-- not currently used -->
+							<code value=""/>   <!-- not currently used -->
+							<display value=""/>   <!-- not currently used -->
+						</coding> 
+						<text value=""/>   <!-- not currently used -->
+					</specialty>
+					<period>
+						<start value="2016-03-17"/>   <!-- practitioner's start date for this allocation -->
+						<end value=""/>   <!-- not currently used -->				
+					</period>
+					<location>
+						<reference value=""/>   <!-- not currently used -->
+						<display value=""/>   <!-- not currently used -->
+					</location>
+				</practitionerRole>	
+			</Practitioner>
+		</List>
+	</Allocations>	
+	<ReferralRequest>   <!-- REFERRAL DETAILS --><!-- Mapped to ReferralRequest -->
+		<status value=""/>   <!-- not currently used -->
+		<identifier>
+			<use value="usual"/>
+			<system value=""/>   <!-- not currently used -->
+			<value value="ASCREF99"/>   <!-- unique identifier for this record (ASCREF prefix + referral id) -->
+		</identifier>
+		<date value=""/>   <!-- not currently used -->
+		<type>   <!-- referral contact source -->
+			<coding>
+				<system value=""/>   <!-- not currently used -->
+				<code value="POL"/>   <!-- referral contact source code -->
+				<display value="Police"/>   <!-- referral contact source display value -->
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</type>
+		<specialty>
+			<coding>
+				<system value=""/>   <!-- not currently used -->
+				<code value=""/>   <!-- not currently used -->
+				<display value=""/>   <!-- not currently used -->
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</specialty>
+		<priority>   <!-- referral contact sub-source -->
+			<coding>
+				<system value=""/>   <!-- not currently used -->
+				<code value="DVU"/>   <!-- referral contact sub-source code -->
+				<display value="Domestic Violence Unit"/>   <!-- referral contact sub-source display value -->
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</priority>
+		<patient>
+			<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+			<display value=""/>   <!-- not currently used - service user's full name -->
+		</patient>
+		<requester>
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</requester>
+		<recipient>		
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</recipient>
+		<encounter>		
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</encounter>
+		<dateSent value="2016-01-31"/>   <!-- referral contact date -->
+		<reason>
+			<coding>
+				<system value=""/>   <!-- not currently used -->
+				<code value=""/>   <!-- not currently used -->
+				<display value=""/>   <!-- not currently used -->
+			</coding>	
+			<text value=""/>   <!-- not currently used -->
+		</reason>
+		<description value=""/>   <!-- not currently used -->
+		<serviceRequested>   <!-- referral contact outcome -->
+			<coding>
+				<system value=""/>   <!-- not currently used -->
+				<code value="ACR"/>   <!-- referral contact outcome code -->
+				<display value="Refer to Adult Care"/>   <!-- referral contact outcome display value -->
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</serviceRequested>
+		<supportingInformation>
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</supportingInformation>
+		<fulfillmentTime>
+			<start value=""/>   <!-- not currently used -->
+			<end value=""/>   <!-- not currently used -->	
+		</fulfillmentTime>
+	</ReferralRequest>	
+	<SupportPlanServices>   <!-- SUPPORT PLAN SERVICES DETAILS --><!-- Mapped to List w/EpisodeOfCare -->
+		<code>
+			<coding>
+				<code value="SupportPlanServices"/>
+				<display value="Support Plan Services"/>
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</code>
+		<subject value="patient"/>
+		<source>
+			<reference value="Patient/1234567890"/>
+		</source>
+		<List>
+			<EpisodeOfCare>
+				<identifier>
+					<use value="usual"/>
+					<system value=""/>
+					<value value="ASCSER266"/>   <!-- unique identifier for this record (ASCSER prefix + provision of service id) -->
+				</identifier>
+				<status value="active"/>
+				<statusHistory>
+					<status value=""/>
+					<period>
+						<start value=""/>
+						<end value=""/>
+					</period>
+				</statusHistory>
+				<type>
+					<coding>
+						<system value=""/>   <!-- not currently used -->
+						<code value="R17"/>   <!-- service type code-->
+						<display value="RESIDENTIAL EMI PERMANENT"/>   <!-- service type display value -->
+					</coding> 
+					<text value=""/>   <!-- not currently used -->
+				</type>
+				<condition>			
+					<reference value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</condition>			
+				<patient>
+					<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+					<display value="Lcrintegration Testserviceuser"/>   <!-- service user's full name -->
+				</patient>
+				<managingOrganization>
+					<reference value="Organisation/ASCPRO123"/>   <!-- unique identifier for this record (ASCPRO prefix + service provider id) -->
+					<display value="Acme Care Home"/>   <!-- service provider's name -->
+				</managingOrganization>	
+				<period>
+					<start value="2016-04-13"/>   <!-- service start date -->
+					<end value=""/>   <!-- not currently used -->		
+				</period>
+				<referralRequest>
+					<reference value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</referralRequest>			
+				<careManager>
+					<reference value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</careManager>
+			</EpisodeOfCare>
+		</List>
+	</SupportPlanServices>
+	<CarePlan>   <!-- REABLEMENT DETAILS --><!-- Mapped to CarePlan -->
+		<identifier>
+			<use value="usual"/>
+			<system value=""/>
+			<value value="ASCREAB1234"/>   <!-- unique identifier for this record (ASCREAB prefix + reablement plan id) -->
+		</identifier>
+		<subject>
+			<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+			<display value=""/>   <!-- not currently used - service user's full name -->
+		</subject>
+		<status value=""/>   <!-- not currently used -->	
+		<context>
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</context>
+		<period>
+			<start value="2016-01-25"/>   <!-- reablement plan start date -->
+			<end value="2016-02-16"/>   <!-- reablement plan discharge date -->
+		</period>
+		<author>
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</author>
+		<modified value=""/>   <!-- not currently used -->	
+		<category>
+			<coding>
+				<system value=""/>   <!-- not currently used -->
+				<code value=""/>   <!-- not currently used -->
+				<display value=""/>   <!-- not currently used -->
+			</coding> 
+			<text value=""/>   <!-- not currently used -->
+		</category>
+		<description value=""/>   <!-- not currently used -->	
+		<addresses>
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</addresses>
+		<support>
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</support>
+	</CarePlan>
+	<Disabilities>   <!-- DISABILITIES DETAILS --><!-- Mapped to List w/Condition -->
+		<code>
+			<coding>
+				<code value="Disabilities"/>
+				<display value="Disabilities"/>
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</code>
+		<subject value="patient"/>
+		<source>
+			<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+		</source>
+		<List>
+			<Condition>
+				<identifier>
+					<use value="usual"/>
+					<system value=""/>
+					<value value="ASCDISVI99"/>   <!-- unique identifier for this record (ASCDIS + [VI/DS] + disability row id) -->
+				</identifier>
+				<patient>
+					<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+					<display value=""/>   <!-- not currently used - service user's full name -->
+				</patient>
+				<encounter>
+					<reference value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->			
+				</encounter>
+				<asserter>
+					<reference value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->			
+				</asserter>			
+				<dateRecorded value=""/>   <!-- not currently used -->	
+				<code>   <!-- disability type -->
+					<coding>
+						<code value="SSI"/>   <!-- disability code -->
+						<display value="Severely Sight Impaired"/>   <!-- disability display name -->
+					</coding>			
+					<text value=""/>   <!-- not currently used -->
+				</code>
+				<category>
+					<coding>
+						<code value=""/>   <!-- not currently used -->
+						<display value=""/>   <!-- not currently used -->
+					</coding>			
+					<text value=""/>   <!-- not currently used -->
+				</category>
+				<clinicalStatus value=""/>   <!-- not currently used -->			
+				<verificationStatus value=""/>   <!-- not currently used -->			
+				<severity>
+					<coding>
+						<code value=""/>   <!-- not currently used -->
+						<display value=""/>   <!-- not currently used -->
+					</coding>			
+					<text value=""/>   <!-- not currently used -->
+				</severity>			
+				<onsetDateTime value="2012-05-24"/>   <!-- date the disability was registered -->
+				<notes value=""/>   <!-- not currently used -->
+			</Condition>
+		</List>
+	</Disabilities>
+	<AllergyIntolerance>   <!-- OCCUPATIONAL THERAPY DETAILS --><!-- Mapped to AllergyIntolerance -->
+		<identifier>
+			<use value="usual"/>
+			<system value=""/>
+			<value value="ASCOT1234"/>   <!-- unique identifier for this record (ASCOT prefix + ot assessment id) -->
+		</identifier>		
+		<onset value="2016-03-15"/>   <!-- ot assessment start date -->
+		<recordedDate value=""/>   <!-- not currently used -->
+		<recorder>	
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</recorder>	
+		<patient>
+			<reference value="Patient/1234567890"/>   <!-- service user's nhs number -->
+			<display value=""/>   <!-- not currently used - service user's full name -->
+		</patient>
+		<reporter>	
+			<reference value=""/>   <!-- not currently used -->
+			<display value=""/>   <!-- not currently used -->
+		</reporter>	
+		<substance>
+			<coding>
+				<system value=""/>   <!-- not currently used -->
+				<code value=""/>   <!-- not currently used -->
+				<display value=""/>   <!-- not currently used -->
+			</coding>
+			<text value=""/>   <!-- not currently used -->
+		</substance>
+		<status value=""/>   <!-- not currently used -->
+		<criticality value=""/>   <!-- not currently used -->
+		<type value=""/>   <!-- not currently used -->
+		<category value=""/>   <!-- not currently used -->
+		<lastOccurence value="2016-03-31"/>   <!-- ot assessment end date -->
+		<note>
+			<author value=""/>   <!-- not currently used -->
+			<time value=""/>   <!-- not currently used -->
+			<text value=""/>   <!-- not currently used -->
+		</note>		
+		<reaction>   <!-- ot summary report outcome -->
+			<substance>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value="EQP"/>   <!-- ot assessment outcome code -->
+					<display value="Equipment - Standard"/>   <!-- ot assessment outcome display value -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</substance>
+			<certainty value=""/>   <!-- not currently used -->
+			<manifestation>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</manifestation>
+			<description value=""/>   <!-- not currently used -->	
+			<onset value=""/>
+			<severity value=""/>			
+			<exposureRoute>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</exposureRoute>			
+			<note>
+				<author value=""/>   <!-- not currently used -->
+				<time value=""/>   <!-- not currently used -->
+				<text value=""/>   <!-- not currently used -->
+			</note>					
+		</reaction>
+		<reaction>   <!-- ot summary report outcome -->
+			<substance>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value="MAA"/>   <!-- ot assessment outcome code -->
+					<display value="Major Adaptations"/>   <!-- ot assessment outcome display value -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</substance>
+			<certainty value=""/>   <!-- not currently used -->
+			<manifestation>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</manifestation>
+			<description value=""/>   <!-- not currently used -->	
+			<onset value=""/>
+			<severity value=""/>			
+			<exposureRoute>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</exposureRoute>			
+			<note>
+				<author value=""/>   <!-- not currently used -->
+				<time value=""/>   <!-- not currently used -->
+				<text value=""/>   <!-- not currently used -->
+			</note>					
+		</reaction>
+		<reaction>   <!-- ot summary report outcome -->
+			<substance>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value="MVH"/>   <!-- ot assessment outcome code -->
+					<display value="Moving and Handling"/>   <!-- ot assessment outcome display value -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</substance>
+			<certainty value=""/>   <!-- not currently used -->
+			<manifestation>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</manifestation>
+			<description value=""/>   <!-- not currently used -->	
+			<onset value=""/>
+			<severity value=""/>			
+			<exposureRoute>
+				<coding>
+					<system value=""/>   <!-- not currently used -->
+					<code value=""/>   <!-- not currently used -->
+					<display value=""/>   <!-- not currently used -->
+				</coding>
+				<text value=""/>   <!-- not currently used -->
+			</exposureRoute>			
+			<note>
+				<author value=""/>   <!-- not currently used -->
+				<time value=""/>   <!-- not currently used -->
+				<text value=""/>   <!-- not currently used -->
+			</note>					
+		</reaction>
+	</AllergyIntolerance>
+</LCR>
