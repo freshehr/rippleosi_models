@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>20eac6f3-cf70-43da-9401-b9c5e21f30e9</id>
+  <name>IDCR - Medication List.v0</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.medication_list.v0" concept_name="Medication list" name="Current medication list">
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.medication_medical_devices_rcp.v1" concept_name="Medication and medical devices" path="/content">
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.current_medication_rcp.v1" concept_name="Current medication" path="/items">
+        <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v0" concept_name="Medication order" path="/items">
+          <Rule path="/activities[at0001]" hide_on_form="true" />
+          <Rule path="/activities[at0001]/description[at0002]" hide_on_form="true" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0047]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0056]/items[at0057]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0144]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0145]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0134]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0056]/items[at0058]/items[at0102]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0062]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0148]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0113]/items[at0013]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0113]/items[at0011]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0113]/items[at0016]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0113]/items[at0050]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0113]/items[at0060]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0133]" max="0" />
+          <Rule path="/activities[at0001]/description[at0002]/items[at0129]" max="0" />
+          <Rule path="/protocol[at0005]" hide_on_form="true" />
+          <Rule path="/protocol[at0005]/items[at0004]" max="0" />
+          <Rule path="/protocol[at0005]/items[at0135]" max="0" />
+        </Item>
+      </Item>
+    </Content>
+    <Context />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.medication_list.v0">
+    <digest id="MD5-CAM-1.0.1">6580C641D816380326253E28A85DE60C</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.medication_medical_devices_rcp.v1">
+    <digest id="MD5-CAM-1.0.1">BA8A4CAF4F969BDC67687A8EF75D3523</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.current_medication_rcp.v1">
+    <digest id="MD5-CAM-1.0.1">11F96A81485AA129BD29C858F0A3F21E</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v0">
+    <digest id="MD5-CAM-1.0.1">D64F9FBAEAC113A31CCCB0B2F3567865</digest>
+  </integrity_checks>
+</template>

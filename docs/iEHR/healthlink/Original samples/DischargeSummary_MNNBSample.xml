@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REF_I12 xmlns="urn:hl7-org:v2xml">
+  <MSH>
+    <MSH.1>|</MSH.1>
+    <MSH.2>^~\&amp;</MSH.2>
+    <MSH.3>
+      <HD.1>MEDITECH.HEALTHLINK.5</HD.1>
+      <HD.2></HD.2>
+      <HD.3></HD.3>
+    </MSH.3>
+    <MSH.4>
+      <HD.1>ROTUNDA HOSPITAL</HD.1>
+      <HD.2>932</HD.2>
+      <HD.3>L</HD.3>
+    </MSH.4>
+    <MSH.6>
+      <HD.1>SMITH,MATHEW</HD.1>
+      <HD.2>10001</HD.2>
+      <HD.3>L</HD.3>
+    </MSH.6>
+    <MSH.7>
+      <TS.1>201603141503</TS.1>
+    </MSH.7>
+    <MSH.9>
+      <MSG.1>REF</MSG.1>
+      <MSG.2>I12</MSG.2>
+    </MSH.9>
+    <MSH.10>201603041503</MSH.10>
+    <MSH.11>
+      <PT.1>P</PT.1>
+    </MSH.11>
+    <MSH.12>
+      <VID.1>2.4</VID.1>
+    </MSH.12>
+  </MSH>
+  <REF_I12.PROVIDER_CONTACT>
+    <PRD>
+      <PRD.1>
+        <CE.1>RT</CE.1>
+        <CE.2>Referred to Provider</CE.2>
+        <CE.3>L</CE.3>
+        <CE.4></CE.4>
+        <CE.5></CE.5>
+        <CE.6></CE.6>
+      </PRD.1>
+      <PRD.2>
+        <XPN.1>
+          <FN.1>MEDIC</FN.1>
+        </XPN.1>
+        <XPN.2>JACK</XPN.2>
+        <XPN.3></XPN.3>
+        <XPN.4></XPN.4>
+        <XPN.5>DR</XPN.5>
+        <XPN.6></XPN.6>
+      </PRD.2>
+      <PRD.3>
+        <XAD.1>
+          <SAD.1>HEALTHCARE DEPT</SAD.1>
+        </XAD.1>
+        <XAD.2>ROTUNDA HOSPITAL</XAD.2>
+        <XAD.3>DUBLIN</XAD.3>
+        <XAD.4 />
+      </PRD.3>
+      <PRD.4>
+        <PL.1></PL.1>
+        <PL.6></PL.6>
+        <PL.9></PL.9>
+      </PRD.4>
+      <PRD.5>
+        <XTN.1 />
+      </PRD.5>
+      <PRD.7>
+        <PI.1>12345-998877</PI.1>
+        <PI.2></PI.2>
+        <PI.3></PI.3>
+      </PRD.7>
+    </PRD>
+  </REF_I12.PROVIDER_CONTACT>
+  <REF_I12.PROVIDER_CONTACT>
+    <PRD>
+      <PRD.1>
+        <CE.1>PP</CE.1>
+        <CE.2>Primary Care Provider</CE.2>
+        <CE.3>L</CE.3>
+        <CE.4></CE.4>
+        <CE.5></CE.5>
+        <CE.6></CE.6>
+      </PRD.1>
+      <PRD.2>
+        <XPN.1>
+          <FN.1>BLOGGS</FN.1>
+        </XPN.1>
+        <XPN.2>MATHEW</XPN.2>
+        <XPN.3></XPN.3>
+        <XPN.4></XPN.4>
+        <XPN.5>DR</XPN.5>
+        <XPN.6></XPN.6>
+      </PRD.2>
+      <PRD.3>
+        <XAD.1>
+          <SAD.1>58 MAIN ST</SAD.1>
+        </XAD.1>
+        <XAD.2>HOMETOWN</XAD.2>
+        <XAD.3>CO.DUBLIN</XAD.3>
+        <XAD.4 />
+      </PRD.3>
+      <PRD.4>
+        <PL.1></PL.1>
+        <PL.6></PL.6>
+        <PL.9></PL.9>
+      </PRD.4>
+      <PRD.5>
+        <XTN.1 />
+      </PRD.5>
+      <PRD.7>
+        <PI.1>012345</PI.1>
+        <PI.2></PI.2>
+        <PI.3></PI.3>
+      </PRD.7>
+    </PRD>
+  </REF_I12.PROVIDER_CONTACT>
+  <PID>
+    <PID.3>
+      <CX.1>M99999999</CX.1>
+      <CX.2></CX.2>
+      <CX.3></CX.3>
+      <CX.4>
+        <HD.1>UPMC BEACON HOSPITAL</HD.1>
+        <HD.2 />
+        <HD.3 />
+      </CX.4>
+      <CX.5>MRN</CX.5>
+    </PID.3>
+    <PID.5>
+      <XPN.1>
+        <FN.1>BLOGGS</FN.1>
+      </XPN.1>
+      <XPN.2>JOE</XPN.2>
+      <XPN.3 />
+      <XPN.4 />
+      <XPN.5 />
+      <XPN.6 />
+      <XPN.7 />
+    </PID.5>
+    <PID.7>
+      <TS.1>19950101</TS.1>
+    </PID.7>
+    <PID.8>M</PID.8>
+    <PID.11>
+      <XAD.1>
+        <SAD.1>36 MAIN ST</SAD.1>
+      </XAD.1>
+      <XAD.2>HOMETOWN</XAD.2>
+      <XAD.3>CO. DUBLIN</XAD.3>
+      <XAD.4 />
+      <XAD.5 />
+    </PID.11>
+    <PID.13>
+      <XTN.1 />
+      <XTN.4 />
+      <XTN.6 />
+      <XTN.7 />
+    </PID.13>
+    <PID.29>
+      <TS.1 />
+    </PID.29>
+    <PID.30 />
+  </PID>
+  <DG1>
+    <DG1.1></DG1.1>
+    <DG1.2></DG1.2>
+    <DG1.3>
+      <CE.1>TWIN</CE.1>
+      <CE.2>Twin Pregnancy</CE.2>
+      <CE.3>L</CE.3>
+      <CE.4></CE.4>
+      <CE.5></CE.5>
+      <CE.6></CE.6>
+    </DG1.3>
+    <DG1.4>Twin pregnancy with cesarean section</DG1.4>
+    <DG1.5>
+      <TS.1>201509291319</TS.1>
+    </DG1.5>
+    <DG1.6>A</DG1.6>
+    <DG1.15>1</DG1.15>
+    <DG1.16>
+      <XCN.1>1379</XCN.1>
+      <XCN.2>
+        <FN.1>MCENTEE</FN.1>
+      </XCN.2>
+      <XCN.3>G.</XCN.3>
+      <XCN.4></XCN.4>
+      <XCN.5></XCN.5>
+      <XCN.6>MR.</XCN.6>
+    </DG1.16>
+    <DG1.17>C</DG1.17>
+    <DG1.18>N</DG1.18>
+  </DG1>
+  <AL1>
+    <AL1.1>
+      <CE.1>1</CE.1>
+      <CE.2></CE.2>
+      <CE.3></CE.3>
+    </AL1.1>
+    <AL1.2>
+      <CE.1>DA</CE.1>
+      <CE.2>Drug Alergy</CE.2>
+      <CE.3>HL7</CE.3>
+    </AL1.2>
+    <AL1.3>
+      <CE.1>PEN</CE.1>
+      <CE.2>Penicillin</CE.2>
+      <CE.3>L</CE.3>
+    </AL1.3>
+    <AL1.4>
+      <CE.1>SV</CE.1>
+      <CE.2>Severe</CE.2>
+      <CE.3>L</CE.3>
+    </AL1.4>
+    <AL1.5>Causes convulsions</AL1.5>
+  </AL1>
+  <REF_I12.PROCEDURE>
+    <PR1>
+      <PR1.1>1</PR1.1>
+      <PR1.2>L</PR1.2>
+      <PR1.3>
+        <CE.1>EP</CE.1>
+        <CE.2>Epidural</CE.2>
+        <CE.3>L</CE.3>
+      </PR1.3>
+      <PR1.4>The patient had an epidural</PR1.4>
+      <PR1.5>
+        <TS.1>20160314150303</TS.1>
+      </PR1.5>
+      <PR1.6>LP</PR1.6>
+      <PR1.13>
+        <CE.1>CA</CE.1>
+        <CE.2>Consent Accepted</CE.2>
+        <CE.3>L</CE.3>
+      </PR1.13>
+    </PR1>
+  </REF_I12.PROCEDURE>
+  <REF_I12.OBSERVATION>
+    <OBR>
+      <OBR.1>1</OBR.1>
+      <OBR.2>
+        <EI.1>201603041503333</EI.1>
+        <EI.2>Referral Control Number</EI.2>
+        <EI.3></EI.3>
+        <EI.4></EI.4>
+      </OBR.2>
+      <OBR.3>
+        <EI.1></EI.1>
+        <EI.2></EI.2>
+        <EI.3></EI.3>
+        <EI.4></EI.4>
+      </OBR.3>
+      <OBR.4>
+        <CE.1>XXXXX-3</CE.1>
+        <CE.2>Clinical Information</CE.2>
+        <CE.3>LN</CE.3>
+        <CE.4></CE.4>
+        <CE.5></CE.5>
+        <CE.6></CE.6>
+      </OBR.4>
+      <OBR.7>
+        <TS.1>20160314150303</TS.1>
+      </OBR.7>
+    </OBR>
+    <REF_I12.RESULTS_NOTES>
+      <OBX>
+        <OBX.1>1</OBX.1>
+        <OBX.2>FT</OBX.2>
+        <OBX.3>
+          <CE.1>XXXX-0</CE.1>
+          <CE.2>GENERAL</CE.2>
+          <CE.3>LN</CE.3>
+          <CE.4></CE.4>
+          <CE.5></CE.5>
+          <CE.6></CE.6>
+        </OBX.3>
+        <OBX.5>An alert gravid woman in no distress</OBX.5>
+        <OBX.6/>
+        <OBX.11>F</OBX.11>
+        <OBX.14>
+          <TS.1>20160314150303</TS.1>
+        </OBX.14>
+      </OBX>
+    </REF_I12.RESULTS_NOTES>
+    <REF_I12.RESULTS_NOTES>
+      <OBX>
+        <OBX.1>2</OBX.1>
+        <OBX.2>FT</OBX.2>
+        <OBX.3>
+          <CE.1>XXXX-0</CE.1>
+          <CE.2>ABDOMEN</CE.2>
+          <CE.3>LN</CE.3>
+          <CE.4></CE.4>
+          <CE.5></CE.5>
+          <CE.6></CE.6>
+        </OBX.3>
+        <OBX.5> Gravid, nontender, non-irritable, with an infant in the vertex presentation. Estimated fetal weight was greater than 10 pounds.</OBX.5>
+        <OBX.6/>
+        <OBX.11>F</OBX.11>
+        <OBX.14>
+          <TS.1>20160314150303</TS.1>
+        </OBX.14>
+      </OBX>
+    </REF_I12.RESULTS_NOTES>
+  </REF_I12.OBSERVATION>
+  <REF_I12.OBSERVATION>
+    <OBR>
+      <OBR.1>2</OBR.1>
+      <OBR.2>
+        <EI.1>201603041503333</EI.1>
+        <EI.2>Referral Control Number</EI.2>
+        <EI.3></EI.3>
+        <EI.4></EI.4>
+      </OBR.2>
+      <OBR.3>
+        <EI.1></EI.1>
+        <EI.2></EI.2>
+        <EI.3></EI.3>
+        <EI.4></EI.4>
+      </OBR.3>
+      <OBR.4>
+        <CE.1>XXXXXX-0</CE.1>
+        <CE.2>Hospital Course</CE.2>
+        <CE.3>LN</CE.3>
+        <CE.4></CE.4>
+        <CE.5></CE.5>
+        <CE.6></CE.6>
+      </OBR.4>
+      <OBR.7>
+        <TS.1>20160314134026</TS.1>
+      </OBR.7>
+    </OBR>
+    <REF_I12.RESULTS_NOTES>
+      <OBX>
+        <OBX.1>1</OBX.1>
+        <OBX.2>FT</OBX.2>
+        <OBX.3>
+          <CE.1>XXXXXX-0</CE.1>
+          <CE.2>Hospital Course</CE.2>
+          <CE.3>LN</CE.3>
+          <CE.4></CE.4>
+          <CE.5></CE.5>
+          <CE.6></CE.6>
+        </OBX.3>
+        <OBX.5>On the first hospital day, the patient went to the operating room where repeat low transverse cesarean was performed under spinal anesthesia. Patient recovered uneventfully from her anesthesia and surgery.</OBX.5>
+        <OBX.11>F</OBX.11>
+        <OBX.14>
+          <TS.1>20160314134026</TS.1>
+        </OBX.14>
+      </OBX>
+    </REF_I12.RESULTS_NOTES>
+  </REF_I12.OBSERVATION>
+  <REF_I12.OBSERVATION>
+    <OBR>
+      <OBR.1>3</OBR.1>
+      <OBR.2>
+        <EI.1>201603041503333</EI.1>
+        <EI.2>Referral Control Number</EI.2>
+        <EI.3></EI.3>
+        <EI.4></EI.4>
+      </OBR.2>
+      <OBR.3>
+        <EI.1></EI.1>
+        <EI.2></EI.2>
+        <EI.3></EI.3>
+        <EI.4></EI.4>
+      </OBR.3>
+      <OBR.4>
+        <CE.1>19009-0</CE.1>
+        <CE.2>Current Medication</CE.2>
+        <CE.3>LN</CE.3>
+        <CE.4></CE.4>
+        <CE.5></CE.5>
+        <CE.6></CE.6>
+      </OBR.4>
+      <OBR.7>
+        <TS.1>20160314134026</TS.1>
+      </OBR.7>
+    </OBR>
+    <REF_I12.RESULTS_NOTES>
+      <OBX>
+        <OBX.1>1</OBX.1>
+        <OBX.2>FT</OBX.2>
+        <OBX.3>
+          <CE.1>19009-0</CE.1>
+          <CE.2>Current Medication</CE.2>
+          <CE.3>LN</CE.3>
+          <CE.4></CE.4>
+          <CE.5></CE.5>
+          <CE.6></CE.6>
+        </OBX.3>
+        <OBX.5>Aspirin 81 mg p.o. daily </OBX.5>
+        <OBX.11>F</OBX.11>
+        <OBX.14>
+          <TS.1>20160314134026</TS.1>
+        </OBX.14>
+      </OBX>
+    </REF_I12.RESULTS_NOTES>
+    <REF_I12.RESULTS_NOTES>
+      <OBX>
+        <OBX.1>2</OBX.1>
+        <OBX.2>FT</OBX.2>
+        <OBX.3>
+          <CE.1>19009-0</CE.1>
+          <CE.2>Current Medication</CE.2>
+          <CE.3>LN</CE.3>
+          <CE.4></CE.4>
+          <CE.5></CE.5>
+          <CE.6></CE.6>
+        </OBX.3>
+        <OBX.5>Panadol 20 mg p.o. daily</OBX.5>
+        <OBX.11>F</OBX.11>
+        <OBX.14>
+          <TS.1>20160314134026</TS.1>
+        </OBX.14>
+      </OBX>
+    </REF_I12.RESULTS_NOTES>
+  </REF_I12.OBSERVATION>
+  <REF_I12.PATIENT_VISIT>
+    <PV1>
+      <PV1.2>O</PV1.2>
+      <PV1.3>
+        <PL.1 />
+        <PL.2 />
+        <PL.3 />
+        <PL.4>
+          <HD.1 />
+          <HD.2 />
+          <HD.3 />
+        </PL.4>
+        <PL.5 />
+        <PL.6 />
+        <PL.7 />
+        <PL.8 />
+        <PL.9 />
+      </PV1.3>
+      <PV1.4>L</PV1.4>
+      <PV1.7>
+        <XCN.1>1601</XCN.1>
+        <XCN.2>
+          <FN.1>BROWN</FN.1>
+        </XCN.2>
+        <XCN.3>BOBBY</XCN.3>
+        <XCN.4/>
+        <XCN.5/>
+        <XCN.6>DR</XCN.6>
+      </PV1.7>
+      <PV1.8>
+        <XCN.1>99821</XCN.1>
+        <XCN.2>
+          <FN.1>JONES</FN.1>
+        </XCN.2>
+        <XCN.3>VINCENT</XCN.3>
+        <XCN.4/>
+        <XCN.5/>
+        <XCN.6>DR</XCN.6>
+      </PV1.8>
+      <PV1.9>
+        <XCN.1 />
+        <XCN.2>
+          <FN.1 />
+        </XCN.2>
+        <XCN.3 />
+        <XCN.4 />
+        <XCN.5 />
+        <XCN.6 />
+      </PV1.9>
+      <PV1.14 />
+      <PV1.15 />
+      <PV1.19>
+        <CX.1 />
+      </PV1.19>
+      <PV1.36>01</PV1.36>
+      <PV1.37>
+        <DLD.1></DLD.1>
+      </PV1.37>
+      <PV1.44>
+        <TS.1>20160314150303</TS.1>
+      </PV1.44>
+      <PV1.45>
+        <TS.1>20160414150303</TS.1>
+      </PV1.45>
+      <PV1.51 />
+    </PV1>
+  </REF_I12.PATIENT_VISIT>
+  <NTE>
+    <NTE.1>1</NTE.1>
+    <NTE.2 />
+    <NTE.3>this is for general comments only!</NTE.3>
+  </NTE>
+</REF_I12>
+
+

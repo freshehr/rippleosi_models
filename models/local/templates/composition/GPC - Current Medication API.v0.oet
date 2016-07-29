@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>36a34091-c969-4f0d-b262-92ea8376cd08</id>
+  <name>GPC - Current Medication API.v0</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.medication_list.v0" concept_name="Medication list">
+    <Content xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v0" concept_name="Medication order" path="/content">
+      <Rule path="/activities[at0001]/description[at0002]/items[at0091]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0047]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0109]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0055]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0056]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0062]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0044]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0044]" max="1" clone="true" name="Notes" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0105]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0107]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0018]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0148]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0113]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0133]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0106]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0141]/items[at0140]" name="Dispense quantity description" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0141]/items[at0158]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0141]/items[at0159]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0141]/items[at0160]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0141]/items[at0142]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0141]/items[at0155]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0141]/items[at0161]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0132]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0154]" max="0" />
+      <Rule path="/activities[at0001]/description[at0002]/items[at0129]/items[at0139]" max="0" />
+      <Rule path="/protocol[at0005]/items[at0004]" max="0" />
+      <Rule path="/protocol[at0005]/items[at0135]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medication_authorisation.v0" concept_name="Medication authorisation" path="/activities[at0001]/description[at0002]/items[at0069]">
+        <Rule path="/items[at0078]" max="0" />
+        <Rule path="/items[at0079]" max="0" />
+        <Rule path="/items[at0046]" max="0" />
+        <Rule path="/items[at0080]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.medication.v0" concept_name="Medication action" max="1" path="/content" name="First authorisation">
+      <Rule path="/description[at0017]/items[at0033]" max="0" />
+      <Rule path="/description[at0017]/items[at0021]" max="0" />
+      <Rule path="/description[at0017]/items[at0082]" max="0" />
+      <Rule path="/description[at0017]/items[at0025]" max="0" />
+      <Rule path="/description[at0017]/items[at0059]" max="0" />
+      <Rule path="/description[at0017]/items[at0043]" max="0" />
+      <Rule path="/protocol[at0030]/items[at0103]" max="0" />
+    </Content>
+    <Content xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.medication.v0" concept_name="Medication action" path="/content">
+      <Rule path="/description[at0017]/items[at0033]" max="0" />
+      <Rule path="/description[at0017]/items[at0021]" max="0" />
+      <Rule path="/description[at0017]/items[at0082]" max="0" />
+      <Rule path="/description[at0017]/items[at0025]" max="0" />
+      <Rule path="/description[at0017]/items[at0059]" max="0" />
+      <Rule path="/description[at0017]/items[at0043]" max="0" />
+      <Rule path="/protocol[at0030]/items[at0103]" max="0" />
+    </Content>
+    <Context />
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.medication_list.v0">
+    <digest id="MD5-CAM-1.0.1">6580C641D816380326253E28A85DE60C</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v0">
+    <digest id="MD5-CAM-1.0.1">D64F9FBAEAC113A31CCCB0B2F3567865</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.medication_authorisation.v0">
+    <digest id="MD5-CAM-1.0.1">418EDCE16FC97D91FD25C5F4EB8C0A63</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ACTION.medication.v0">
+    <digest id="MD5-CAM-1.0.1">978A7E7282F895449B2F55778C536CA5</digest>
+  </integrity_checks>
+</template>

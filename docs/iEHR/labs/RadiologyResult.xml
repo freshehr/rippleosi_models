@@ -1,0 +1,179 @@
+﻿<ORU_R01>
+  <MSH>
+    <MSH.1>|</MSH.1>
+    <MSH.2>^~\&amp;</MSH.2>
+    <MSH.3>
+      <HD.1>NIMIS.healthlink.7</HD.1>
+    </MSH.3>
+    <MSH.4>
+      <HD.1>TALLAGHT HOSPITAL</HD.1>
+      <HD.2>1049</HD.2>
+      <HD.3>DOH</HD.3>
+    </MSH.4>
+    <MSH.5 />
+    <MSH.6>
+      <HD.1>Hills, Max</HD.1>
+      <HD.2>023087</HD.2>
+      <HD.3>Medical Council No</HD.3>
+    </MSH.6>
+    <MSH.7>
+      <TS.1>20140707140300</TS.1>
+    </MSH.7>
+    <MSH.9>
+      <MSG.1>ORU</MSG.1>
+      <MSG.2>R01</MSG.2>
+    </MSH.9>
+    <MSH.10>201407071433.9914C2</MSH.10>
+    <MSH.11>
+      <PT.1>P</PT.1>
+    </MSH.11>
+    <MSH.12>
+      <VID.1>2.4</VID.1>
+    </MSH.12>
+  </MSH>
+  <ORU_R01.PATIENT_RESULT>
+    <ORU_R01.PATIENT>
+      <PID>
+        <PID.3>
+          <CX.1>X03030303</CX.1>
+          <CX.4>
+            <HD.1>TALLAGHT HOSPITAL</HD.1>
+            <HD.2>1049</HD.2>
+            <HD.3>DOH</HD.3>
+          </CX.4>
+          <CX.5>MRN</CX.5>
+        </PID.3>
+        <PID.5>
+          <XPN.1>
+            <FN.1>HEALTHLINK</FN.1>
+          </XPN.1>
+          <XPN.2>FIVE</XPN.2>
+          <XPN.3></XPN.3>
+          <XPN.4></XPN.4>
+        </PID.5>
+        <PID.7>
+          <TS.1>19990521</TS.1>
+        </PID.7>
+        <PID.8>F</PID.8>
+        <PID.11>
+          <XAD.1>
+            <SAD.1>TESTING</SAD.1>
+          </XAD.1>
+          <XAD.2>TEST</XAD.2>
+          <XAD.3>TEST</XAD.3>
+          <XAD.4></XAD.4>
+          <XAD.5></XAD.5>
+        </PID.11>
+        <PID.13>
+          <XTN.1></XTN.1>
+          <XTN.2></XTN.2>
+          <XTN.3></XTN.3>
+          <XTN.4></XTN.4>
+        </PID.13>
+      </PID>
+      <ORU_R01.PATIENT_VISIT>
+        <PV1>
+          <PV1.2>O</PV1.2>
+          <PV1.3>
+            <PL.4>
+              <HD.1>TAL OP PAED ENT</HD.1>
+              <HD.2>0601</HD.2>
+              <HD.3></HD.3>
+            </PL.4>
+            <PL.9>TAL OP PAED ENT</PL.9>
+          </PV1.3>
+          <PV1.7>
+            <XCN.1>006768</XCN.1>
+            <XCN.2>
+              <FN.1>MCSHANE</FN.1>
+            </XCN.2>
+            <XCN.3>DONALD</XCN.3>
+            <XCN.4></XCN.4>
+            <XCN.5>CONS (ENT)</XCN.5>
+            <XCN.6></XCN.6>
+          </PV1.7>
+          <PV1.9>
+            <XCN.1>582369T</XCN.1>
+            <XCN.2>
+              <FN.1>TAL</FN.1>
+            </XCN.2>
+            <XCN.3>RADIOLOGIST1</XCN.3>
+            <XCN.4></XCN.4>
+            <XCN.5>CONS(RADIOL)</XCN.5>
+            <XCN.6></XCN.6>
+          </PV1.9>
+          <PV1.14></PV1.14>
+          <PV1.19>
+            <CX.1>X030303</CX.1>
+          </PV1.19>
+        </PV1>
+      </ORU_R01.PATIENT_VISIT>
+    </ORU_R01.PATIENT>
+    <ORU_R01.ORDER_OBSERVATION>
+      <OBR>
+        <OBR.1>1</OBR.1>
+        <OBR.2>
+          <EI.1>000081978</EI.1>
+        </OBR.2>
+        <OBR.3>
+          <EI.1>TAL000008264</EI.1>
+        </OBR.3>
+        <OBR.4>
+          <CE.1>UNECK</CE.1>
+          <CE.2>US NECK</CE.2>
+          <CE.3>NIMIS CATALOGUE</CE.3>
+        </OBR.4>
+        <OBR.7>
+          <TS.1>20140707095000</TS.1>
+        </OBR.7>
+        <OBR.13>? LUMP</OBR.13>
+        <OBR.16>
+          <XCN.1>023087</XCN.1>
+          <XCN.2>
+            <FN.1>MCSHANE</FN.1>
+          </XCN.2>
+          <XCN.3>DONALD</XCN.3>
+          <XCN.4></XCN.4>
+          <XCN.5></XCN.5>
+          <XCN.6></XCN.6>
+        </OBR.16>
+        <OBR.22>
+          <TS.1>20140707140300</TS.1>
+        </OBR.22>
+        <OBR.24>RAD</OBR.24>
+        <OBR.25>C</OBR.25>
+        <OBR.28>
+          <XCN.1>023087.1026</XCN.1>
+          <XCN.2>
+            <FN.1>HILLS</FN.1>
+          </XCN.2>
+          <XCN.3>MAX</XCN.3>
+          <XCN.5>GP</XCN.5>
+          <XCN.16>
+            <CE.1>Copy To Two</CE.1>
+            <CE.2>Copy To Two</CE.2>
+            <CE.3>L</CE.3>
+          </XCN.16>
+        </OBR.28>
+      </OBR>
+      <ORU_R01.OBSERVATION>
+        <OBX>
+          <OBX.1>1</OBX.1>
+          <OBX.2>FT</OBX.2>
+          <OBX.3>
+            <CE.1>UNECK</CE.1>
+            <CE.2>US NECK</CE.2>
+            <CE.3>NIMIS CATALOGUE</CE.3>
+          </OBX.3>
+          <OBX.5>
+            addendum added today 7.7.2014 14.34<escape V=".br"/><escape V=".br"/><escape V=".br"/>Examination Performed: US NECK<escape V=".br"/>Exam Completion Date: 12/06/2014 09:30<escape V=".br"/><escape V=".br"/>TECHNIQUE: <escape V=".br"/>Ultrasound neck.<escape V=".br"/><escape V=".br"/>COMPARISON:<escape V=".br"/>None available. <escape V=".br"/><escape V=".br"/>FINDINGS:<escape V=".br"/>Palpable lump in posterior aspect of the neck.<escape V=".br"/>At the site of clinical concern, in the midline of the posterior neck. No <escape V=".br"/>encapsulated mass or significant abnormality. <escape V=".br"/>Focussed scanning over the palpable lump shows no significant abnormality. <escape V=".br"/><escape V=".br"/>IMPRESSION:<escape V=".br"/>No significant abnormality. Repeat scan in 6 months time advised.<escape V=".br"/><escape V=".br"/><escape V=".br"/><escape V=".br"/><escape V=".br"/><escape V=".br"/><escape V=".br"/><escape V=".br"/>Signed by: Radiologist 1 Tal, Cons. Radiologist, MCRN 582369T on 16/06/2014 <escape V=".br"/>15:12
+          </OBX.5>
+          <OBX.11>C</OBX.11>
+          <OBX.14>
+            <TS.1>20140707140300</TS.1>
+          </OBX.14>
+        </OBX>
+      </ORU_R01.OBSERVATION>
+    </ORU_R01.ORDER_OBSERVATION>
+  </ORU_R01.PATIENT_RESULT>
+</ORU_R01>

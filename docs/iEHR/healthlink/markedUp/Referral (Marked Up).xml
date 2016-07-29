@@ -1,0 +1,2005 @@
+<!-- TemplateID: iEHR - Healthlink - Referral.v0 -->
+<!-- Sample CompoitionUID: 0fc37199-5749-4e09-b942-4d79ee9729a1::ripple_osi.ehrscape.c4h::1 -->
+
+<REF_I12 xmlns="urn:hl7-org:v2xml">
+	<MSH>
+		<MSH.1>|</MSH.1>
+		<MSH.2>^~\&amp;</MSH.2>
+		<MSH.3>
+				<!--	"referral/feeder_audit/originating_system_audit/systemId" : "HLONLINE.HEALTHLINK.30" -->
+			<HD.1>HLONLINE.HEALTHLINK.30</HD.1>
+			<HD.2 />
+			<HD.3 />
+		</MSH.3>
+		<MSH.4>
+			<!-- "ctx/composer_name": "Martin, Martins", -->
+			<HD.1>Martin, Martins</HD.1>
+			<!-- "ctx/health_care_facility|id": "111111.5555", -->	
+			<HD.2>111111.5555</HD.2>
+			<HD.3>MCN.HLPracticeID</HD.3>
+		</MSH.4>
+		<MSH.5>
+			<HD.1>HEALTHLINK</HD.1>
+			<HD.2 />
+			<HD.3 />
+		</MSH.5>
+		<MSH.6>
+		
+			<HD.1>Mater Public Hospital</HD.1>
+			<!--	"referral/referral_details/service_request/referred_to_provider/identifier": "908.285" -->
+			<HD.2>908.285</HD.2>
+			<HD.3>L</HD.3>
+		</MSH.6>
+		<MSH.7>
+			<!-- "ctx/time": "2016-04-03T18:47:46.811Z", -->
+			<!--	"referral/feeder_audit/originating_system_audit/time" : "2016-04-03T18:47:46.811Z" -->
+			<TS.1>201601031151</TS.1>
+		</MSH.7>
+		<MSH.9>
+			<MSG.1>REF</MSG.1>
+			<MSG.2>I12</MSG.2>
+		</MSH.9>	
+		<!-- "referral/referral_details/service_request/referral_control_number": "REF20160103115155411809", -->
+		<!--	"referral/feeder_audit/originating_system_item_ids:0/id" : "REF20160103115155111111" -->
+		<!--	"referral/feeder_audit/originating_system_item_ids:0/type" : "ControlID" -->
+		<!--	"referral/feeder_audit/originating_system_item_ids:0/assigner" : "HLONLINE.HEALTHLINK.30" -->
+		<!--	"referral/feeder_audit/originating_system_item_ids:0/type" : "HLONLINE.HEALTHLINK.30" -->
+				
+		<!-- Next line needs to be added -->
+		<!-- "referral/referral_details/service_request/request:0/timing": "Boilerplate timing string", -->
+		<MSH.10>REF20160103115155111111</MSH.10>
+		<MSH.11>
+			<PT.1>P</PT.1>
+		</MSH.11>
+		<MSH.12>
+			<VID.1>2.4</VID.1>
+		</MSH.12>
+		<MSH.15 />
+	</MSH>
+	<RF1>
+		<RF1.1>
+			<CE.1>P</CE.1>
+<!--
+			CE.1 = P::Pending
+			"referral/referral_details/referral_status/ism_transition/current_state|code": "526",
+			"referral/referral_details/referral_status/ism_transition/current_state|value": "planned",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|code": "at0002",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|value": "Referral planned",
+
+			CE.1 = A:Accepted
+			"referral/referral_details/referral_status/ism_transition/current_state|code": "529",
+			"referral/referral_details/referral_status/ism_transition/current_state|value": "scheduled",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|code": "at0003",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|value": "Appoinment scheduled",
+			
+			CE.1 = R:Rejected
+			"referral/referral_details/referral_status/ism_transition/current_state|code": "528",
+			"referral/referral_details/referral_status/ism_transition/current_state|value": "cancelled",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|code": "at009",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|value": "Referral cancelled",
+
+			CE.1 = E:Expired
+			"referral/referral_details/referral_status/ism_transition/current_state|code": "531",
+			"referral/referral_details/referral_status/ism_transition/current_state|value": "aborted",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|code": "at023",
+			"referral/referral_details/referral_status/ism_transition/careflow_step|value": "Referral expired",
+
+			"referral/referral_details/referral_status/referral_type": "Cardiology", (Same as for "referral/referral_details/service_request/request:0/referral_type": "Cardiology")
+						
+-->
+			<CE.2>Pending</CE.2>
+			<CE.3>L</CE.3>
+			<CE.4 />
+			<CE.5 />
+			<CE.6 />
+		</RF1.1>
+		
+		<RF1.2>
+			<!-- 	
+			CE.1 = U Urgent
+			  "referral/referral_details/service_request/request:0/priority|code": "at0136",	
+			 CE.1 = E Early
+			  "referral/referral_details/service_request/request:0/priority|code": "at0137",
+			 CE.1 = R Routine
+			  "referral/referral_details/service_request/request:0/priority|code": "at0138",
+			-->	
+			<CE.1>R</CE.1>
+			<CE.2>Routine</CE.2>
+			<CE.3>L</CE.3>
+			<CE.4 />
+			<CE.5 />
+			<CE.6 />
+		</RF1.2>
+		<RF1.3>
+			
+			<!-- "referral/referral_details/service_request/request:0/referral_type": "Gen Med/Cardiology", -->
+			<CE.1>Gen Med/Cardiology</CE.1>
+
+			<!-- "referral/referral_details/service_request/request:0/comments": "Gen Med/Cardiology", -->
+			<CE.2>Gen Med/Cardiology</CE.2>
+			<CE.3>L</CE.3>
+			<CE.4 />
+			<CE.5 />
+			<CE.6 />
+		</RF1.3>
+		<RF1.6>
+			<!-- "referral/referral_details/service_request/referring_provider/identifier": "REF20160103115155411809", -->
+			<EI.1>REF20160103115155411809</EI.1>
+			<EI.2 />
+			<EI.3 />
+			<EI.4 />
+		</RF1.6>
+		<RF1.7>
+			<!-- "referral/referral_details/referral_status/time": "2016-01-03",  -->
+			<TS.1>20160103</TS.1>
+			
+		</RF1.7>
+	</RF1>
+	<REF_I12.PROVIDER_CONTACT>
+		<PRD>
+			<PRD.1>
+				<CE.1>PP</CE.1>
+				<CE.2>Primary Care Provider</CE.2>
+				<CE.3>L</CE.3>
+				<CE.4 />
+				<CE.5 />
+				<CE.6 />
+			</PRD.1>
+			<PRD.2>
+				<XPN.1>
+					<FN.1>Martin</FN.1>
+				</XPN.1>
+				<XPN.2>Martins</XPN.2>
+				<XPN.3 />
+				<XPN.4 />
+				<XPN.5 />
+				<XPN.6 />
+				<XPN.7 />
+			</PRD.2>
+			<PRD.3>
+				<XAD.1>
+					<SAD.1>77 Benburb Street</SAD.1>
+				</XAD.1>
+				<XAD.2>Smithfield</XAD.2>
+				<XAD.3>Dublin 7</XAD.3>
+				<XAD.4 />
+				<XAD.5 />
+			</PRD.3>
+			<PRD.4>
+				<!-- "referral/referral_details/service_request/distribution:0/individual_recipient/gp/name_of_organisation": "Dental & Medical Clinic Benburb St.", -->
+				<!--"ctx/health_care_facility|name": "Dental & Medical Clinic Benburb St.", -->
+				<!-- "referral/referral_details/service_request/referring_provider/name_of_organisation": "Dental & Medical Clinic Benburb St.", -->
+			
+	<PL.1>Dental &amp; Medical Clinic Benburb St.</PL.1>
+				<PL.4>
+					<HD.1 />
+					<HD.2 />
+					<HD.3 />
+				</PL.4>
+				<PL.6 />
+				<PL.9 />
+			</PRD.4>
+			<PRD.5>
+				<!--   "referral/referral_details/service_request/distribution/individual_recipient/gp/wpn/work_number": "5384913", -->
+				<XTN.1>5384913</XTN.1>
+				<XTN.2>WPN</XTN.2>
+				<XTN.3>PH</XTN.3>
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</PRD.5>
+			<PRD.5>
+				<!-- "referral/referral_details/service_request/distribution/individual_recipient/gp/emr/emergency_number": "0873692100", -->
+				<XTN.1>0873692100</XTN.1>
+				<XTN.2>EMR</XTN.2>
+				<XTN.3>CP</XTN.3>
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</PRD.5>
+			<PRD.5>
+				<!--   "referral/referral_details/service_request/distribution/individual_recipient/gp/net/internet": "MartinMartins@yahoo.com", -->
+				<XTN.1>MartinMartins@yahoo.com</XTN.1>
+				<XTN.2>NET</XTN.2>
+				<XTN.3>Internet</XTN.3>
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</PRD.5>
+			<PRD.7>
+				<!-- "referral/referral_details/service_request/referring_provider/identifier": "411809", -->
+				<PI.1>411809</PI.1>
+				<PI.2 />
+				<PI.3 />
+			</PRD.7>
+		</PRD>
+	</REF_I12.PROVIDER_CONTACT>
+	<REF_I12.PROVIDER_CONTACT>
+		<PRD>
+			<PRD.1>
+				<CE.1>RT</CE.1>
+				<CE.2>Referred to Provider</CE.2>
+				<CE.3>L</CE.3>
+				<CE.4 />
+				<CE.5 />
+				<CE.6 />
+			</PRD.1>
+			<PRD.2>
+				<XPN.1>
+					<FN.1 />
+				</XPN.1>
+				<XPN.2 />
+				<XPN.3 />
+				<XPN.4 />
+				<XPN.5 />
+				<XPN.6 />
+				<XPN.7 />
+			</PRD.2>
+			<PRD.3>
+				<XAD.1>
+					<SAD.1>Gen Med/Cardiology</SAD.1>
+				</XAD.1>
+				<!--	"referral/referral_details/service_request/referred_to_provider/name_of_organisation": "Mater Public Hospital Gen Med/Cardiology", -->		
+				<XAD.2>Mater Public Hospital Gen Med/Cardiology</XAD.2>
+				<XAD.3 />
+				<XAD.4 />
+				<XAD.5 />
+			</PRD.3>
+			<PRD.4>
+				<PL.1>Gen Med/Cardiology</PL.1>
+				<PL.4>
+					<HD.1 />
+					<HD.2 />
+					<HD.3 />
+				</PL.4>
+				<PL.6 />
+				<PL.9 />
+			</PRD.4>
+			<PRD.5>
+				<XTN.1 />
+				<XTN.2 />
+				<XTN.3 />
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</PRD.5>
+			<PRD.7>
+				<PI.1 />
+				<PI.2 />
+				<PI.3 />
+			</PRD.7>
+		</PRD>
+	</REF_I12.PROVIDER_CONTACT>
+	<REF_I12.PROVIDER_CONTACT>
+		<PRD>
+			<PRD.1>
+				<CE.1>RP</CE.1>
+				<CE.2>Referring Provider</CE.2>
+				<CE.3>L</CE.3>
+				<CE.4 />
+				<CE.5 />
+				<CE.6 />
+			</PRD.1>
+			<PRD.2>
+				<XPN.1>
+					<FN.1 />
+				</XPN.1>
+				<XPN.2 />
+				<XPN.3 />
+				<XPN.4 />
+				<XPN.5 />
+				<XPN.6 />
+				<XPN.7 />
+			</PRD.2>
+			<PRD.3>
+				<XAD.1>
+					<SAD.1 />
+				</XAD.1>
+				<XAD.2 />
+				<XAD.3 />
+				<XAD.4 />
+				<XAD.5 />
+			</PRD.3>
+			<PRD.4>
+				<PL.1 />
+				<PL.4>
+					<HD.1 />
+					<HD.2 />
+					<HD.3 />
+				</PL.4>
+				<PL.6 />
+				<PL.9 />
+			</PRD.4>
+			<PRD.5>
+				<XTN.1 />
+				<XTN.2 />
+				<XTN.3 />
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</PRD.5>
+			<PRD.7>
+				<PI.1 />
+				<PI.2 />
+				<PI.3 />
+			</PRD.7>
+		</PRD>
+	</REF_I12.PROVIDER_CONTACT>
+	<PID>
+		<PID.3>
+			<CX.1>HL0001</CX.1>
+			<CX.4>
+				<HD.1>HEALTHLINK</HD.1>
+				<HD.2 />
+				<HD.3 />
+			</CX.4>
+			<CX.5>HLID</CX.5>
+			<CX.8 />
+		</PID.3>
+		<PID.5>
+			<XPN.1>
+				<FN.1>BLOGGS</FN.1>
+			</XPN.1>
+			<XPN.2>BETTY</XPN.2>
+			<XPN.3 />
+			<XPN.4 />
+			<XPN.5>Mrs</XPN.5>
+			<XPN.6 />
+			<XPN.7>L</XPN.7>
+		</PID.5>
+		<PID.7>
+			<TS.1>19861126</TS.1>
+		</PID.7>
+		<PID.8>F</PID.8>
+		<PID.11>
+			<XAD.1>
+				<SAD.1>24 MAIN STREET NORTH</SAD.1>
+			</XAD.1>
+			<XAD.2>DUBLIN 03</XAD.2>
+			<XAD.3 />
+			<XAD.4 />
+			<XAD.5 />
+		</PID.11>
+		<PID.13>
+			<XTN.1 />
+			<XTN.2>PRN</XTN.2>
+			<XTN.3>PH</XTN.3>
+			<XTN.4 />
+			<XTN.6 />
+			<XTN.7 />
+		</PID.13>
+		<PID.13>
+			<XTN.1>0891111111</XTN.1>
+			<XTN.2>EMR</XTN.2>
+			<XTN.3>CP</XTN.3>
+			<XTN.4 />
+			<XTN.6 />
+			<XTN.7 />
+		</PID.13>
+		<PID.15>
+			<CE.1>rum</CE.1>
+			<CE.2>Romanian</CE.2>
+			<CE.3>ISO-639</CE.3>
+			<CE.4 />
+			<CE.5 />
+			<CE.6 />
+		</PID.15>
+		<PID.18>
+			<CX.1 />
+			<CX.4>
+				<HD.1 />
+				<HD.2 />
+				<HD.3 />
+			</CX.4>
+			<CX.5 />
+			<CX.8 />
+		</PID.18>
+		<PID.29>
+			<TS.1 />
+		</PID.29>
+		<PID.30 />
+	</PID>
+	<DG1>
+		<DG1.1 />
+		<DG1.2 />
+		<DG1.3>
+			<CE.1 />
+			<CE.2 />
+			<CE.3 />
+			<CE.4 />
+			<CE.5 />
+			<CE.6 />
+		</DG1.3>
+		<DG1.4 />
+		<DG1.5>
+			<TS.1 />
+		</DG1.5>
+		<DG1.6 />
+		<DG1.16>
+			<XCN.1 />
+			<XCN.2>
+				<FN.1 />
+			</XCN.2>
+			<XCN.3 />
+			<XCN.4 />
+			<XCN.5 />
+			<XCN.6 />
+		</DG1.16>
+	</DG1>
+	<REF_I12.OBSERVATION>
+		<OBR>
+			<OBR.1>1</OBR.1>
+			<OBR.2>
+				<EI.1>REF20160103115155411809</EI.1>
+				<EI.2>Referral Control Number</EI.2>
+				<EI.3 />
+				<EI.4 />
+			</OBR.2>
+			<OBR.3>
+				<EI.1 />
+				<EI.2 />
+				<EI.3 />
+				<EI.4 />
+			</OBR.3>
+			<OBR.4>
+				<CE.1>11329-0</CE.1>
+				<CE.2>History General</CE.2>
+				<CE.3>LN</CE.3>
+				<CE.4 />
+				<CE.5 />
+				<CE.6 />
+			</OBR.4>
+			<OBR.7>
+				<TS.1>20160103115155</TS.1>
+			</OBR.7>
+			<OBR.13 />
+			<OBR.14>
+				<TS.1 />
+			</OBR.14>
+			<OBR.15>
+				<SPS.1>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.1>
+				<SPS.2 />
+				<SPS.3 />
+				<SPS.4>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.4>
+				<SPS.5>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.5>
+				<SPS.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.6>
+			</OBR.15>
+			<OBR.16>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.16>
+			<OBR.17>
+				<XTN.1 />
+				<XTN.2 />
+				<XTN.3 />
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</OBR.17>
+			<OBR.18 />
+			<OBR.24 />
+			<OBR.25>F</OBR.25>
+			<OBR.27>
+				<TQ.4>
+					<TS.1 />
+				</TQ.4>
+				<TQ.6 />
+				<TQ.8 />
+			</OBR.27>
+			<OBR.28>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.28>
+		</OBR>
+		<NTE>
+			<NTE.1 />
+			<NTE.2 />
+			<NTE.3 />
+		</NTE>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>1</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>42349-1</CE.1>
+					<CE.2>Reason for Referral</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- "referral/referral_details/service_request/request:0/reason_for_referral": "Cardiologic assessment Diagnosis: Atrial flutter", -->
+				<OBX.5>Cardiologic assessment
+Diagnosis: Atrial flutter</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>2</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>X0057-0</CE.1>
+					<CE.2>Previous Hospital Attendance</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- "referral/history_of_present_illness/hospital_attendances_summary/previous_attendances": false, -->
+				<OBX.5>No</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>3</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>10164-2</CE.1>
+					<CE.2>History of present illness</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- "referral/history_of_present_illness/story_history/history_of_present_illness": "he has atrial flutter since 2007
+In the last year he has fatigue, dyspnea", -->
+				<OBX.5>he has atrial flutter since 2007
+In the last year he has fatigue, dyspnea</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>4</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>10167-5</CE.1>
+					<CE.2>History of surgical procedures</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				
+				<!-- 
+				if OBX.5 = "NIL" then
+				{
+				  "referral/history_of_surgical_procedures/exclusion_of_a_procedure/exclusion_statement": "No significant procedures",
+				}
+				else
+				{
+					"referral/history_of_surgical_procedures/procedure:0/ism_transition/current_state|code": "532",
+					"referral/history_of_surgical_procedures/procedure:0/ism_transition/current_state|value": "completed",
+					"referral/history_of_surgical_procedures/procedure:0/history_of_surgical_procedure": "Left cataract",
+				}				
+				-->
+				<OBX.5>NIL</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				
+				<!-- 
+				if OBX.5 = "NIL" then
+				{
+				    "referral/history_of_surgical_procedures/exclusion_of_a_procedure/date_last_updated": "2016-01-03T11:15" <= <TS.1>20160103115155</TS.1>
+				}
+				else
+				{
+					
+					"referral/history_of_surgical_procedures/procedure:0/time": "2016-01-03T11:15" <= <TS.1>20160103115155</TS.1>
+				}				
+				-->
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>5</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>10155-0</CE.1>
+					<CE.2>History of allergies</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- 
+				if OBX.5 = "NIL" then
+				{
+				"referral/history_of_allergies/exclusion_of_an_adverse_reaction/exclusion_statement": "No known allergies or adverse reactions",
+				}
+				else
+				{
+				"referral/history_of_allergies/adverse_reaction_risk:0/history_of_allergy": "Penicillin",
+				}				
+				-->
+				
+				
+				<OBX.5>NIL</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<!--
+				if OBX.5 = "NIL" then
+				{
+				"referral/history_of_allergies/adverse_reaction_risk:0/last_updated": "2016-01-03T11:55", <= <TS.1>20160103115155</TS.1>
+				}
+				else
+				{
+				"referral/history_of_allergies/exclusion_of_an_adverse_reaction/date_last_updated": "2016-01-03T11:55" <= <TS.1>20160103115155</TS.1> ,
+				}				
+				-->
+				
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>6</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>10157-6</CE.1>
+					<CE.2>History of family member diseases</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				
+				
+			
+				<!--
+				if OBX.5 = "NIL" then
+				{
+					"referral/history_of_family_member_diseases/exclusion_of_family_history/exclusion_statement": "No significant family history",
+				}
+				else
+				{
+					"referral/history_of_family_member_diseases/family_history:0/history_of_family_member_diseases": "Diabetes",
+				}				
+				-->
+				
+				<OBX.5>NIL</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				
+				<!--
+				if OBX.5 = "NIL" then
+				{
+				
+					"referral/history_of_family_member_diseases/exclusion_of_family_history/date_last_updated": ""2016-01-03T11:55", <= <TS.1>
+				else
+				{
+					"referral/history_of_family_member_diseases/family_history:0/last_updated": "2016-01-03T11:55" <= <TS.1>}				
+				-->
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>4</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>11348-0</CE.1>
+					<CE.2>History of past illness</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.3>
+				
+				<!--
+				if OBX.5 = "NIL" then
+				{
+				 	 "referral/history_of_past_illness/exclusion_of_a_problem_diagnosis/exclusion_statement": "No significant past history",
+				}
+				else
+				{
+					 "referral/history_of_past_illness/problem_diagnosis:0/history_of_past_illness": "Asthma",
+				}				
+				-->
+				<OBX.5>Asthma</OBX.5>
+				<OBX.6>
+					<CE.1></CE.1>
+					<CE.2></CE.2>
+					<CE.3></CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.6>
+				<OBX.7></OBX.7>
+				<OBX.8></OBX.8>
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					
+					<!--
+				if OBX.5 = "NIL" then
+				{
+				
+					 "referral/history_of_past_illness/exclusion_of_a_problem_diagnosis/last_updated": "2016-04-03T11:55", <= <TS.1>
+				}
+				else
+				{
+					"referral/history_of_past_illness/problem_diagnosis:0/date_time_clinically_recognised": "2016-04-11T11:55" <= <TS.1> ,
+				}				
+				-->
+					<TS.1>20160411111907</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1></NTE.1>
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>7</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>X0055-0</CE.1>
+					<CE.2>Comments</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!--  "referral/comments/clinical_synopsis/comments": "He is on Acenocoumarolum and Metoprolol since 2007 in Romania"-->
+				<OBX.5>He is on Acenocoumarolum and Metoprolol since 2007 in Romania</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+	</REF_I12.OBSERVATION>
+	<REF_I12.OBSERVATION>
+		<OBR>
+			<OBR.1>2</OBR.1>
+			<OBR.2>
+				<EI.1>REF20160103115155411809</EI.1>
+				<EI.2>Referral Control Number</EI.2>
+				<EI.3 />
+				<EI.4 />
+			</OBR.2>
+			<OBR.3>
+				<EI.1 />
+				<EI.2 />
+				<EI.3 />
+				<EI.4 />
+			</OBR.3>
+			<OBR.4>
+				<CE.1>29762-2</CE.1>
+				<CE.2>Social History</CE.2>
+				<CE.3>LN</CE.3>
+				<CE.4 />
+				<CE.5 />
+				<CE.6 />
+			</OBR.4>
+			<OBR.7>
+				<TS.1>20160103115155</TS.1>
+			</OBR.7>
+			<OBR.13 />
+			<OBR.14>
+				<TS.1 />
+			</OBR.14>
+			<OBR.15>
+				<SPS.1>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.1>
+				<SPS.2 />
+				<SPS.3 />
+				<SPS.4>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.4>
+				<SPS.5>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.5>
+				<SPS.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.6>
+			</OBR.15>
+			<OBR.16>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.16>
+			<OBR.17>
+				<XTN.1 />
+				<XTN.2 />
+				<XTN.3 />
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</OBR.17>
+			<OBR.18 />
+			<OBR.24 />
+			<OBR.25>F</OBR.25>
+			<OBR.27>
+				<TQ.4>
+					<TS.1 />
+				</TQ.4>
+				<TQ.6 />
+				<TQ.8 />
+			</OBR.27>
+			<OBR.28>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.28>
+		</OBR>
+		<NTE>
+			<NTE.1 />
+			<NTE.2 />
+			<NTE.3 />
+		</NTE>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>1</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>X0006-0</CE.1>
+					<CE.2>Interpreter Required</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!--   "referral/referral_details/service_request/request:0/interpreter_details/interpreter_required": false, -->
+				<OBX.5>No</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>2</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>28189-9</CE.1>
+					<CE.2>Physical mobility impairment</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- "referral/social_context/physical_mobility_impairment/physical_mobility_impairment": "No", -->
+				<OBX.5>No</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>3</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>11366-2</CE.1>
+					<CE.2>History of tobacco use</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.3>
+				<!-- "referral/social_context/history_of_tobacco_use/smoking_details:0/history_of_tobacco_use": "Non-smoker", -->
+				<OBX.5>Current smoker</OBX.5>
+				<OBX.6>
+					<CE.1></CE.1>
+					<CE.2></CE.2>
+					<CE.3></CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.6>
+				<OBX.7></OBX.7>
+				<OBX.8></OBX.8>
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160411170255</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1></NTE.1>
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>4</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>8663-7</CE.1>
+					<CE.2>Cigarettes Smoked per day</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.3>
+				<OBX.5>20</OBX.5>
+				<OBX.6>
+					<CE.1></CE.1>
+					<CE.2></CE.2>
+					<CE.3></CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.6>
+				<OBX.7></OBX.7>
+				<OBX.8></OBX.8>
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160411170255</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1></NTE.1>
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>5</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>X0007-0</CE.1>
+					<CE.2>Years Smoking</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.3>
+				<OBX.5>30</OBX.5>
+				<OBX.6>
+					<CE.1></CE.1>
+					<CE.2></CE.2>
+					<CE.3></CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.6>
+				<OBX.7></OBX.7>
+				<OBX.8></OBX.8>
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160411170255</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1></NTE.1>
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>6</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>11330-8</CE.1>
+					<CE.2>History of alcohol use</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.3>
+				<!--   "referral/social_context/history_of_alcohol_use/history_of_alcohol_use": "No", -->
+				<OBX.5>Yes</OBX.5>
+				<OBX.6>
+					<CE.1></CE.1>
+					<CE.2></CE.2>
+					<CE.3></CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.6>
+				<OBX.7></OBX.7>
+				<OBX.8></OBX.8>
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160411170255</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1></NTE.1>
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			
+			<OBX>
+				<OBX.1>7</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>X0011-0</CE.1>
+					<CE.2>Units of Alcohol per week</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.3>
+				<OBX.5>20</OBX.5>
+				<OBX.6>
+					<CE.1></CE.1>
+					<CE.2></CE.2>
+					<CE.3></CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.6>
+				<OBX.7></OBX.7>
+				<OBX.8></OBX.8>
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160411170255</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1></NTE.1>
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>8</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>X0056-0</CE.1>
+					<CE.2>Next of Kin</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.3>
+				<OBX.5>Patricia Bloggs, 087 7777777, wife</OBX.5>
+				<OBX.6>
+					<CE.1></CE.1>
+					<CE.2></CE.2>
+					<CE.3></CE.3>
+					<CE.4></CE.4>
+					<CE.5></CE.5>
+					<CE.6></CE.6>
+				</OBX.6>
+				<OBX.7></OBX.7>
+				<OBX.8></OBX.8>
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160411170255</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1></NTE.1>
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+	</REF_I12.OBSERVATION>
+	<REF_I12.OBSERVATION>
+		<OBR>
+			<OBR.1>3</OBR.1>
+			<OBR.2>
+				<EI.1>REF20160103115155411809</EI.1>
+				<EI.2>Referral Control Number</EI.2>
+				<EI.3 />
+				<EI.4 />
+			</OBR.2>
+			<OBR.3>
+				<EI.1 />
+				<EI.2 />
+				<EI.3 />
+				<EI.4 />
+			</OBR.3>
+			<OBR.4>
+				<CE.1>22029-3</CE.1>
+				<CE.2>Physical exam.total</CE.2>
+				<CE.3>LN</CE.3>
+				<CE.4 />
+				<CE.5 />
+				<CE.6 />
+			</OBR.4>
+			<OBR.7>
+				<TS.1>20160103115155</TS.1>
+			</OBR.7>
+			<OBR.13 />
+			<OBR.14>
+				<TS.1 />
+			</OBR.14>
+			<OBR.15>
+				<SPS.1>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.1>
+				<SPS.2 />
+				<SPS.3 />
+				<SPS.4>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.4>
+				<SPS.5>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.5>
+				<SPS.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.6>
+			</OBR.15>
+			<OBR.16>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.16>
+			<OBR.17>
+				<XTN.1 />
+				<XTN.2 />
+				<XTN.3 />
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</OBR.17>
+			<OBR.18 />
+			<OBR.24 />
+			<OBR.25>F</OBR.25>
+			<OBR.27>
+				<TQ.4>
+					<TS.1 />
+				</TQ.4>
+				<TQ.6 />
+				<TQ.8 />
+			</OBR.27>
+			<OBR.28>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.28>
+		</OBR>
+		<NTE>
+			<NTE.1 />
+			<NTE.2 />
+			<NTE.3 />
+		</NTE>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>1</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>8893-0</CE.1>
+					<CE.2>Pulse</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- "referral/examination_findings/vital_signs/pulse_heart_beat/pulse_rate|magnitude": 88, -->
+		
+				<OBX.5>63</OBX.5>
+				<OBX.6>
+					<!-- "referral/examination_findings/vital_signs/pulse_heart_beat/pulse_rate|unit": "/min", -->
+					<CE.1>bpm</CE.1>
+					<CE.2>bpm</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>2</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>8480-6</CE.1>
+					<CE.2>Systolic Blood Pressure</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+			<!--	"referral/examination_findings/vital_signs/blood_pressure/systolic|magnitude": 128, -->
+				
+				<OBX.5>126</OBX.5>
+				<OBX.6>
+				<!--	"referral/examination_findings/vital_signs/blood_pressure/systolic|unit": "mm[Hg]", -->
+					<CE.1>mm/Hg</CE.1>
+					<CE.2>mm/Hg</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>3</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>8462-4</CE.1>
+					<CE.2>Diastolic Blood Pressure</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+			<!--	"referral/examination_findings/vital_signs/blood_pressure/diastolic|magnitude": 67, -->
+				<OBX.5>67</OBX.5>
+				<OBX.6>
+			<!--	"referral/examination_findings/vital_signs/blood_pressure/diastolic|unit": "mm[Hg]", -->
+					<CE.1>mm/Hg</CE.1>
+					<CE.2>mm/Hg</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>4</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>3137-7</CE.1>
+					<CE.2>Body Height</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- "referral/examination_findings/height_length/any_event:0/height_length|magnitude": 150, -->
+				<OBX.5>1.80</OBX.5>
+				<OBX.6>
+					<!-- "referral/examination_findings/height_length/any_event:0/height_length|unit": "cm", -->
+					<CE.1>metres</CE.1>
+					<CE.2>metres</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>5</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>3141-9</CE.1>
+					<CE.2>Weight</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />  
+				<!-- "referral/examination_findings/body_weight/weight|magnitude": 58.05, -->
+				<OBX.5>65</OBX.5>
+				<OBX.6>
+					<!-- "referral/examination_findings/body_weight/weight|unit": "kg", -->					
+					<CE.1>Kg</CE.1>
+					<CE.2>Kg</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>6</OBX.1>
+				<OBX.2>NM</OBX.2>
+				<OBX.3>
+					<CE.1>39156-5</CE.1>
+					<CE.2>Body Mass Index</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!--   "referral/examination_findings/body_mass_index/any_event:0/body_mass_index|magnitude": 20.06, -->
+				<OBX.5>20.06</OBX.5>
+				<OBX.6>
+					<!--    "referral/examination_findings/body_mass_index/any_event:0/body_mass_index|unit": "kg/m2", -->
+					<CE.1>Kg/M2</CE.1>
+					<CE.2>Kg/M2</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>7</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>22029-3</CE.1>
+					<CE.2>Physical exam.total</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!--  "referral/examination_findings/physical_examination_findings/description": "arrytmia", -->
+				<OBX.5>arrytmia</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+	</REF_I12.OBSERVATION>
+	<REF_I12.OBSERVATION>
+		<OBR>
+			<OBR.1>4</OBR.1>
+			<OBR.2>
+				<EI.1>REF20160103115155411809</EI.1>
+				<EI.2>Referral Control Number</EI.2>
+				<EI.3 />
+				<EI.4 />
+			</OBR.2>
+			<OBR.3>
+				<EI.1 />
+				<EI.2 />
+				<EI.3 />
+				<EI.4 />
+			</OBR.3>
+			<OBR.4>
+				<CE.1>19009-0</CE.1>
+				<CE.2>Current Medication</CE.2>
+				<CE.3>LN</CE.3>
+				<CE.4 />
+				<CE.5 />
+				<CE.6 />
+			</OBR.4>
+			<OBR.7>
+				<TS.1>20160103115155</TS.1>
+			</OBR.7>
+			<OBR.13 />
+			<OBR.14>
+				<TS.1 />
+			</OBR.14>
+			<OBR.15>
+				<SPS.1>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.1>
+				<SPS.2 />
+				<SPS.3 />
+				<SPS.4>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.4>
+				<SPS.5>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.5>
+				<SPS.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</SPS.6>
+			</OBR.15>
+			<OBR.16>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.16>
+			<OBR.17>
+				<XTN.1 />
+				<XTN.2 />
+				<XTN.3 />
+				<XTN.4 />
+				<XTN.6 />
+				<XTN.7 />
+			</OBR.17>
+			<OBR.18 />
+			<OBR.24 />
+			<OBR.25>F</OBR.25>
+			<OBR.27>
+				<TQ.4>
+					<TS.1 />
+				</TQ.4>
+				<TQ.6 />
+				<TQ.8 />
+			</OBR.27>
+			<OBR.28>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</OBR.28>
+		</OBR>
+		<NTE>
+			<NTE.1 />
+			<NTE.2 />
+			<NTE.3 />
+		</NTE>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>1</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>X0010-0</CE.1>
+					<CE.2>Anticoagulant Use</CE.2>
+					<CE.3>L</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- "referral/medication_and_medical_devices/anticoagulation_use/anticoagulation_use": true -->
+				<OBX.5>Yes</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>2</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>19009-0</CE.1>
+					<CE.2>Current Medication</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<!-- 
+				if OBX.5 = "NIL" then
+				{
+					"referral/medication_and_medical_devices/exclusion_of_a_medication/exclusion_statement": "No current medication",
+				}
+   				else
+				{
+					"referral/medication_and_medical_devices/medication_order:0/order/medication_item": "Sintrom (Acenocoumarolum), Details: 4mg po, od",
+					"referral/medication_and_medical_devices/medication_order:0/narrative": "Sintrom (Acenocoumarolum), Details: 4mg po, od",
+					  "referral/medication_and_medical_devices/medication_order:0/order/timing": "Boilerplate timing",
+				}				
+				-->
+				<OBX.5>Sintrom (Acenocoumarolum), Details: 4mg po, od</OBX.5>
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+		<REF_I12.RESULTS_NOTES>
+			<OBX>
+				<OBX.1>3</OBX.1>
+				<OBX.2>FT</OBX.2>
+				<OBX.3>
+					<CE.1>19009-0</CE.1>
+					<CE.2>Current Medication</CE.2>
+					<CE.3>LN</CE.3>
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.3>
+				<OBX.4 />
+				<OBX.5>Metoprolol 25 mg po, od</OBX.5>
+				<!-- 
+				if OBX.5 = "NIL" then
+				{
+					"referral/medication_and_medical_devices/exclusion_of_a_medication/exclusion_statement": "No current medication",
+				}
+   				else
+				{
+				"referral/medication_and_medical_devices/medication_order:1/order/medication_item": "Metoprolol 25 mg po, od",
+				"referral/medication_and_medical_devices/medication_order:1/order/timing": "Boilerplate timing",
+				 "referral/medication_and_medical_devices/medication_order:0/narrative": "Metoprolol 25 mg po, od",
+				}				
+				-->
+				<OBX.6>
+					<CE.1 />
+					<CE.2 />
+					<CE.3 />
+					<CE.4 />
+					<CE.5 />
+					<CE.6 />
+				</OBX.6>
+				<OBX.7 />
+				<OBX.8 />
+				<OBX.11>F</OBX.11>
+				<!--
+				if OBX.5 = "NIL" then
+				{
+					"referral/medication_and_medical_devices/exclusion_of_a_medication/date_last_updated": ""2016-01-03T11:55", <= <TS.1>			
+				}
+				else
+				{
+				  "referral/medication_and_medical_devices/medication_order:0/order/course_details/order_start_date_time": "2016-01-03T11:55", <= <TS.1>
+				}
+				-->
+				<OBX.14>
+					<TS.1>20160103115155</TS.1>
+				</OBX.14>
+			</OBX>
+			<NTE>
+				<NTE.1 />
+				<NTE.2 />
+				<NTE.3 />
+			</NTE>
+		</REF_I12.RESULTS_NOTES>
+	</REF_I12.OBSERVATION>
+	<REF_I12.PATIENT_VISIT>
+		<PV1>
+			<PV1.2>O</PV1.2>
+			<PV1.3>
+				<PL.1 />
+				<PL.2 />
+				<PL.3 />
+				<PL.4>
+					<HD.1 />
+					<HD.2 />
+					<HD.3 />
+				</PL.4>
+				<PL.5 />
+				<PL.6 />
+				<PL.7 />
+				<PL.8 />
+				<PL.9 />
+			</PV1.3>
+			<PV1.7>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</PV1.7>
+			<PV1.8>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</PV1.8>
+			<PV1.9>
+				<XCN.1 />
+				<XCN.2>
+					<FN.1 />
+				</XCN.2>
+				<XCN.3 />
+				<XCN.4 />
+				<XCN.5 />
+				<XCN.6 />
+			</PV1.9>
+			<PV1.14 />
+			<PV1.15 />
+			<PV1.19>
+				<CX.1 />
+				<CX.4>
+					<HD.1 />
+					<HD.2 />
+					<HD.3 />
+				</CX.4>
+				<CX.5 />
+				<CX.8 />
+			</PV1.19>
+			<PV1.20>
+				<FC.1 />
+				<FC.2>
+					<TS.1 />
+				</FC.2>
+			</PV1.20>
+			<PV1.36 />
+			<PV1.37>
+				<DLD.1 />
+			</PV1.37>
+			<PV1.44>
+				<TS.1 />
+			</PV1.44>
+			<PV1.45>
+				<TS.1 />
+			</PV1.45>
+			<PV1.51 />
+		</PV1>
+	</REF_I12.PATIENT_VISIT>
+</REF_I12>
